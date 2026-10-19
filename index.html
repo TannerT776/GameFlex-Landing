@@ -16,9 +16,68 @@
 
 <body>
 
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#home" class="brand">
+                <span class="brand-name">GameFlex</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+            </nav>
+
+            <a href="#download" class="button button-primary nav-download">
+                Download App
+            </a>
+        </div>
+    </header>
+
     <main>
-        <h1>GameFlex</h1>
-        <p>Capture. Create. Connect.</p>
+
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <p class="hero-label">GameFlex</p>
+
+                <h1>Capture. Create. Connect.</h1>
+
+                <p class="hero-description">
+                    Turn your best gaming moments into FLEXes and share them
+                    with the players and communities that matter to you.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#download" class="button button-primary">
+                        Download App
+                    </a>
+
+                    <a href="#how-it-works" class="button button-secondary">
+                        See How It Works
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="how-it-works"></section>
+
+        <section id="features"></section>
+
+        <section id="download"></section>
+
     </main>
 
     <script src="js/main.js"></script>
