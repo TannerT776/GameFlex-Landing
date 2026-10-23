@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GameFlex | Capture. Create. Connect.</title>
+
+    <meta
+        name="description"
+        content="GameFlex helps gamers capture, create, and connect through the moments they want to share."
+    >
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
@@ -18,7 +24,8 @@
 
     <header class="site-header">
         <div class="container nav-container">
-            <a href="#home" class="brand">
+
+            <a href="#home" class="brand" aria-label="GameFlex Home">
                 <span class="brand-name">GameFlex</span>
             </a>
 
@@ -27,21 +34,30 @@
                 type="button"
                 aria-label="Open navigation"
                 aria-expanded="false"
+                aria-controls="site-navigation"
             >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <nav class="site-nav">
+            <nav
+                class="site-nav"
+                id="site-navigation"
+                aria-label="Main navigation"
+            >
                 <a href="#how-it-works">How It Works</a>
                 <a href="#features">Features</a>
                 <a href="#download">Download</a>
             </nav>
 
-            <a href="#download" class="button button-primary nav-download">
+            <a
+                href="#download"
+                class="button button-primary nav-download"
+            >
                 Download App
             </a>
+
         </div>
     </header>
 
@@ -50,9 +66,13 @@
         <section class="hero" id="home">
             <div class="container hero-content">
 
-                <p class="hero-label">GameFlex</p>
+                <p class="hero-label">
+                    GameFlex
+                </p>
 
-                <h1>Capture. Create. Connect.</h1>
+                <h1>
+                    Capture. Create. Connect.
+                </h1>
 
                 <p class="hero-description">
                     Turn your best gaming moments into FLEXes and share them
@@ -60,26 +80,47 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#download" class="button button-primary">
+
+                    <a
+                        href="#download"
+                        class="button button-primary"
+                    >
                         Download App
                     </a>
 
-                    <a href="#how-it-works" class="button button-secondary">
+                    <a
+                        href="#how-it-works"
+                        class="button button-secondary"
+                    >
                         See How It Works
                     </a>
+
                 </div>
 
             </div>
         </section>
 
-        <section id="how-it-works"></section>
+        <section
+            class="how-it-works"
+            id="how-it-works"
+        >
+        </section>
 
-        <section id="features"></section>
+        <section
+            class="features"
+            id="features"
+        >
+        </section>
 
-        <section id="download"></section>
+        <section
+            class="download"
+            id="download"
+        >
+        </section>
 
     </main>
 
     <script src="js/main.js"></script>
+
 </body>
 </html>
