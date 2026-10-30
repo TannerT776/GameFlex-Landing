@@ -196,3 +196,43 @@
 
     line-height: 1.2;
 }
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+    padding-block: var(--space-32);
+
+    border-top: 1px solid var(--color-divider);
+
+    text-align: center;
+
+    color: var(--color-text-secondary);
+}
+
+.site-footer p {
+    margin: 0;
+
+    font-size: var(--font-size-14);
+}
+
+/* =========================
+   Reduced Motion
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
