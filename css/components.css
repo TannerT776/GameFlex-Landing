@@ -37,11 +37,11 @@
     align-items: center;
 }
 
-.brand-name {
-    font-size: var(--font-size-20);
-    font-weight: var(--font-weight-bold);
+.brand-logo {
+    display: block;
 
-    color: var(--color-primary);
+    width: 180px;
+    height: auto;
 }
 
 .site-nav {
