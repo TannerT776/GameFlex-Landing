@@ -21,6 +21,10 @@
         width: min(100% - 32px, var(--max-width));
     }
 
+    .brand-logo {
+        width: 145px;
+    }
+
     .site-nav,
     .nav-download {
         display: none;
@@ -78,6 +82,10 @@
 
     .container {
         width: min(100% - 24px, var(--max-width));
+    }
+
+    .brand-logo {
+        width: 130px;
     }
 
     .hero h1 {
