@@ -11,55 +11,99 @@
 
     padding-top: var(--header-height);
 
+    overflow: hidden;
+
     background:
         radial-gradient(
-            circle at 70% 40%,
-            rgba(13, 242, 189, 0.12),
-            transparent 42%
+            circle at 50% 45%,
+            rgba(13, 242, 189, 0.13),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(185, 46, 209, 0.08),
+            transparent 32%
         ),
         linear-gradient(
             180deg,
-            var(--color-background) 0%,
-            #0D151A 100%
+            #121B21 0%,
+            #0B1216 100%
         );
 }
 
-.hero-content {
-    max-width: 760px;
 
-    padding-block: var(--space-64);
+/* =========================
+   Hero Content
+   ========================= */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 900px;
+
+    padding-block: var(--space-80);
+
+    text-align: center;
 }
 
-.hero-label {
+
+/* =========================
+   Hero Logo
+   ========================= */
+
+.hero-logo {
+    width: min(300px, 70vw);
+    height: auto;
+
+    margin-bottom: var(--space-28);
+}
+
+
+/* =========================
+   Hero Tagline
+   ========================= */
+
+.hero-tagline {
     margin-bottom: var(--space-16);
 
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-20);
     font-weight: var(--font-weight-bold);
 
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    letter-spacing: 0.06em;
 
     color: var(--color-primary);
 }
 
+
+/* =========================
+   Hero Heading
+   ========================= */
+
 .hero h1 {
-    max-width: 900px;
+    max-width: 780px;
 
     margin-bottom: var(--space-24);
 
     font-size: clamp(
         var(--font-size-48),
-        8vw,
-        var(--font-size-96)
+        7vw,
+        var(--font-size-64)
     );
 
-    line-height: 0.95;
+    line-height: 1.02;
 }
 
-.hero-description {
-    max-width: 620px;
 
-    margin-bottom: var(--space-32);
+/* =========================
+   Hero Description
+   ========================= */
+
+.hero-description {
+    max-width: 650px;
+
+    margin-bottom: var(--space-36);
 
     font-size: var(--font-size-18);
     line-height: 1.7;
@@ -67,10 +111,41 @@
     color: var(--color-text-secondary);
 }
 
-.hero-actions {
+
+/* =========================
+   Hero Download Options
+   ========================= */
+
+.download-options {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    justify-content: center;
     flex-wrap: wrap;
 
     gap: var(--space-16);
+
+    margin-bottom: var(--space-32);
+}
+
+
+/* =========================
+   Hero Learn More
+   ========================= */
+
+.hero-learn-more {
+    display: inline-flex;
+    align-items: center;
+
+    gap: var(--space-8);
+
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+
+    color: var(--color-text-secondary);
+
+    transition: color var(--transition-fast);
+}
+
+.hero-learn-more:hover {
+    color: var(--color-primary);
 }
