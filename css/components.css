@@ -57,7 +57,9 @@
 
     color: var(--color-text-secondary);
 
-    transition: color var(--transition-fast);
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast);
 }
 
 .site-nav a:hover {
@@ -146,8 +148,23 @@
 
     background-color: var(--color-text-primary);
 
-    transition: transform var(--transition-fast);
+    transition:
+        transform var(--transition-fast),
+        opacity var(--transition-fast);
 }
+
+.menu-toggle.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 
 /* =========================
    App Download Buttons
@@ -197,6 +214,7 @@
     line-height: 1.2;
 }
 
+
 /* =========================
    Footer
    ========================= */
@@ -215,24 +233,4 @@
     margin: 0;
 
     font-size: var(--font-size-14);
-}
-
-/* =========================
-   Reduced Motion
-   ========================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
 }
