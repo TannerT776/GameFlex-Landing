@@ -144,8 +144,12 @@
         gap: var(--space-12);
     }
 
-    .store-badge {
+    .store-badge-apple {
         height: 64px;
+    }
+
+    .store-badge-google {
+        height: 82px;
     }
 
 }
@@ -187,8 +191,12 @@
         line-height: 1.6;
     }
 
-    .store-badge {
+    .store-badge-apple {
         height: 58px;
+    }
+
+    .store-badge-google {
+        height: 74px;
     }
 
 }
