@@ -188,21 +188,12 @@
     transform: translateY(-1px);
 }
 
-.store-badge {
-    display: block;
-
-    width: auto;
-    height: 60px;
-
-    object-fit: contain;
-}
-
 .store-badge-apple {
     height: 60px;
 }
 
 .store-badge-google {
-    height: 60px;
+    height: 78px;
 }
 
 
