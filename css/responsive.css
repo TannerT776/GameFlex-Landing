@@ -131,25 +131,21 @@
     }
 
 
-    /* =========================
-       Download Buttons
-       ========================= */
+   /* =========================
+   Download Badges
+   ========================= */
 
-    .download-options {
-        width: 100%;
+.download-options {
+    width: 100%;
 
-        flex-direction: column;
-    }
+    flex-direction: column;
+    align-items: center;
 
-    .store-button {
-        width: 100%;
-        min-height: 68px;
+    gap: var(--space-12);
+}
 
-        align-items: center;
-
-        text-align: center;
-    }
-
+.store-badge {
+    height: 64px;
 }
 
 
