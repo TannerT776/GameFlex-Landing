@@ -149,7 +149,8 @@
     }
 
     .store-badge-google {
-        height: 82px;
+        width: 202px;
+        height: 64px;
     }
 
 }
@@ -191,12 +192,15 @@
         line-height: 1.6;
     }
 
-   .store-badge-apple {
-    height: 64px;
-}
+    .store-badge-apple {
+        height: 58px;
+    }
 
-.store-badge-google {
-    height: 64px;
+    .store-badge-google {
+        width: 184px;
+        height: 58px;
+    }
+
 }
 
 
