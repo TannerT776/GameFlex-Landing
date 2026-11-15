@@ -176,8 +176,6 @@
     align-items: center;
     justify-content: center;
 
-    overflow: hidden;
-
     transition: transform var(--transition-fast);
 }
 
@@ -189,29 +187,19 @@
     transform: translateY(-1px);
 }
 
-
-/* Apple App Store */
-
-.store-badge-apple {
+.store-badge {
     display: block;
 
     width: auto;
+    object-fit: contain;
+}
+
+.store-badge-apple {
     height: 60px;
 }
 
-
-/* Google Play */
-
 .store-badge-google {
-    display: block;
-
-    width: 190px;
     height: 60px;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 8px;
 }
 
 
